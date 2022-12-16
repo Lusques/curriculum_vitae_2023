@@ -1,18 +1,136 @@
-/* Error: Expected identifier.
- *   ,
- * 5 |   .fw-400 #0984e3{
- *   |            ^
- *   '
- *   src\scss\_classes.scss 5:12  @import
- *   src\scss\style.scss 1:9      root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected identifier.\a   \2577 \a 5 \2502    .fw-400 #0984e3{\d\a   \2502             ^\a   \2575 \a   src\\scss\\_classes.scss 5:12  @import\a   src\\scss\\style.scss 1:9      root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap");
+.bg-gray-400 {
+  background-color: #242a2b;
 }
+
+.text-gray-400 {
+  color: #242a2b;
+}
+
+.bg-yellow-400 {
+  background-color: #fdcb6e;
+}
+
+.text-yellow-400 {
+  color: #fdcb6e;
+}
+
+.bg-blue-400 {
+  background-color: #0984e3;
+}
+
+.text-blue-400 {
+  color: #0984e3;
+}
+
+.bg-gray-300 {
+  background-color: #2d3436;
+}
+
+.text-gray-300 {
+  color: #2d3436;
+}
+
+.bg-yellow-300 {
+  background-color: #ffeaa7;
+}
+
+.text-yellow-300 {
+  color: #ffeaa7;
+}
+
+.bg-blue-300 {
+  background-color: #74b9ff;
+}
+
+.text-blue-300 {
+  color: #74b9ff;
+}
+
+.bg-gray-200 {
+  background-color: #636e72;
+}
+
+.text-gray-200 {
+  color: #636e72;
+}
+
+.bg-blue-200 {
+  background-color: #a9d0ff;
+}
+
+.text-blue-200 {
+  color: #a9d0ff;
+}
+
+.bg-gray-100 {
+  background-color: #b2bec3;
+}
+
+.text-gray-100 {
+  color: #b2bec3;
+}
+
+.bg-blue-100 {
+  background-color: #d6e7ff;
+}
+
+.text-blue-100 {
+  color: #d6e7ff;
+}
+
+.display-lg, .display-sm {
+  font-weight: 400;
+}
+.display-lg {
+  font-size: 57px;
+}
+.display-md {
+  font-size: 45px;
+  font-weight: 700;
+}
+.display-sm {
+  font-size: 36px;
+}
+
+.headline-lg, .headline-md, .headline-sm {
+  font-weight: 400;
+}
+.headline-lg {
+  font-size: 32px;
+}
+.headline-md {
+  font-size: 28px;
+}
+.headline-sm {
+  font-size: 24px;
+}
+
+.title-md, .title-sm {
+  font-weight: 500;
+}
+.title-lg {
+  font-size: 22px;
+  font-weight: 400;
+}
+.title-md {
+  font-size: 16px;
+}
+.title-sm {
+  font-size: 14px;
+}
+
+.body-lg, .body-md, .body-sm {
+  font-weight: 400;
+}
+.body-lg {
+  font-size: 16px;
+}
+.body-md {
+  font-size: 14px;
+}
+.body-sm {
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=style.css.map */
