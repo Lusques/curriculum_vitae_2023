@@ -20,3 +20,9 @@ $map-blue-colors: (
   200: #a9d0ff,
   100: #d6e7ff,
 );
+
+@mixin media($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}

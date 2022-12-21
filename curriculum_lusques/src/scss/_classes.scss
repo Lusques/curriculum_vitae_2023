@@ -72,7 +72,7 @@
   }
   &-md {
     font-size: 45px;
-    font-weight: 700;
+    font-weight: 400;
   }
   &-sm {
     font-size: 36px;
@@ -130,6 +130,76 @@
   }
 }
 
+@include media(992px) {
+  .display-res {
+    &-lg,
+    &-sm {
+      font-weight: 400;
+    }
+    &-lg {
+      font-size: 57px;
+    }
+    &-md {
+      font-size: 45px;
+      font-weight: 400;
+    }
+    &-sm {
+      font-size: 36px;
+    }
+  }
+
+  .headline-res {
+    &-lg,
+    &-md,
+    &-sm {
+      font-weight: 400;
+    }
+    &-lg {
+      font-size: 32px;
+    }
+    &-md {
+      font-size: 28px;
+    }
+    &-sm {
+      font-size: 24px;
+    }
+  }
+
+  .title-res {
+    &-md,
+    &-sm {
+      font-weight: 500;
+    }
+    &-lg {
+      font-size: 22px;
+      font-weight: 400;
+    }
+    &-md {
+      font-size: 16px;
+    }
+    &-sm {
+      font-size: 14px;
+    }
+  }
+
+  .body-res {
+    &-lg,
+    &-md,
+    &-sm {
+      font-weight: 400;
+    }
+    &-lg {
+      font-size: 16px;
+    }
+    &-md {
+      font-size: 14px;
+    }
+    &-sm {
+      font-size: 12px;
+    }
+  }
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -138,6 +208,38 @@
 
 .all-container {
   min-height: 200vh;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 48px 0;
+  & .page-title {
+    color: #fff;
+    position: relative;
+    width: fit-content;
+    &::before {
+      background-color: map-get($map: $map-yellow-colors, $key: 400);
+      bottom: -4px;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 3px;
+      max-width: 50%;
+      min-width: 25%;
+      position: absolute;
+      width: 150px;
+    }
+    @include media(992px) {
+      text-align: center;
+      width: 100%;
+      &:before {
+        left: 50% !important;
+        max-width: 75px;
+        min-width: initial;
+        transform: translateX(-50%);
+      }
+    }
+  }
 }
 
 .button {
