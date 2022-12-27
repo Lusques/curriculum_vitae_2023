@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Home from "./pages/Home";
+import Main from "./pages/Main";
 
 export default function ReactRoutes() {
   return (
@@ -10,7 +10,7 @@ export default function ReactRoutes() {
       </header>
       <main className="container px-5">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Main />} />
         </Routes>
       </main>
     </Router>

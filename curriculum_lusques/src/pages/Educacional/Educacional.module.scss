@@ -1,0 +1,23 @@
+@import "../../scss/variables";
+$yellow: map-get(
+  $map: $map-yellow-colors,
+  $key: 400,
+);
+.card {
+  min-width: 435px;
+  width: calc(32%);
+
+  & .card_title {
+    position: relative;
+    &::after {
+      background-color: $yellow;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 1px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+    }
+  }
+}

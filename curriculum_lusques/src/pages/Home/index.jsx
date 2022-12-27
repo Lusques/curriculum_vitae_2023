@@ -1,61 +1,27 @@
+import ilustration from "./images/home_animation.png";
 import Button from "../../components/Button";
-import Header from "../../components/Header";
-import style from "./Home.module.scss";
-import cake from "./images/cake.svg";
-import location from "./images/location.svg";
-import profile from "./images/profile.png";
-
 export default function Home() {
-  const currentYear = new Date().getFullYear();
-  const information = {
-    ["- O quê procuro:"]:
-      " Ambientes que agucem minha criatividade e meu conhecimento, incluindo desafios que demandem o uso de novas ferramentas/softwares.",
-    ["- Tenho conhecimento em:"]: " HTML, CSS3, Javascript, Git.",
-    ["- Pré-processadores e frameworks Css:"]: " SASS, Bootstrap e ReactJs.",
-    ["- Também domino:"]: "Figma, Trello, Jira e autogerenciamento.",
-  };
   return (
     <>
-      <div className="page d-flex flex-column flex-lg-row-reverse align-items-center justify-content-between">
-        <aside
-          className={`${style.profile_image_container} d-inline-block mb-5`}
-        >
-          <span className={`${style.background_square}`}></span>
-          <div className={`${style.image_container} mb-0`}>
-            <figure>
-              <img className="w-100" src={profile} alt="foto de perfil" />
-            </figure>
-          </div>
-        </aside>
-        <div
-          className={`${style.information} headline-sm body-res-lg text-white w-75 pb-5`}
-        >
-          <h2 className="page-title display-md headline-res-md">Sobre mim</h2>
-          <ul className="list-unstyled d-flex gap-3 mt-4 mb-5 justify-content-center justify-content-lg-start">
-            <li className="d-flex align-items-center gap-2">
-              <figure className="m-0">
-                <img src={cake} alt="bolo de aniversário" />
-              </figure>
-              <p className="m-0">{currentYear - 1999} anos</p>
-            </li>
-            <li className="d-flex align-items-center gap-2">
-              <figure className="m-0">
-                <img src={location} alt="bolo de aniversário" />
-              </figure>
-              <p className="m-0">São Paulo</p>
-            </li>
-          </ul>
-          <p>
-            Chamo-me Lucas, {currentYear - 1999} anos, solteiro e residente em
-            São Paulo.
-          </p>
-          {Object.keys(information).map((value) => (
-            <p>
-              <span className="text-yellow-400">{value}</span>
-              {information[value]}
+      <div className="page row align-items-center flex-column-reverse flex-lg-row">
+        <div className="text-white col-10 col-lg-6">
+          <div className="display-md headline-res-lg text-center text-lg-start mb-4 mb-lg-0">
+            <p className="m-0">Olá!</p>
+            <p className="m-0">
+              Sou <span className="text-yellow-400">Lucas Silva</span>
             </p>
-          ))}
+            <p className="m-0">
+              <span className="text-yellow-400">Front-end</span> developer
+            </p>
+          </div>
+          <div className="d-flex flex-column flex-lg-row align-items-center gap-3">
+            <Button className="" txtButton="Download CV" />
+            <Button txtButton="Portifólio" outline />
+          </div>
         </div>
+        <aside className="col-10 col-lg-6">
+          <img className="w-100" src={ilustration} alt="ilustração" />
+        </aside>
       </div>
     </>
   );

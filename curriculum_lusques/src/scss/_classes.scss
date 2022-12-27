@@ -243,10 +243,17 @@
 }
 
 .button {
-  border: solid 1px;
+  border: solid 1px #0000;
   text-align: center;
   transition: 0.3s;
+  width: fit-content;
   &:active {
     opacity: 0.8;
+  }
+  &:hover {
+    border-color: inherit;
+  }
+  &.button-outline {
+    border-color: inherit !important;
   }
 }
