@@ -3,21 +3,71 @@ $yellow: map-get(
   $map: $map-yellow-colors,
   $key: 400,
 );
-.card {
-  min-width: 435px;
-  width: calc(32%);
+$blue: map-get(
+  $map: $map-blue-colors,
+  $key: 400,
+);
+.desktop {
+  .card {
+    min-width: 435px;
+    width: calc(32%);
 
-  & .card_title {
-    position: relative;
-    &::after {
-      background-color: $yellow;
-      bottom: 0;
-      content: "";
-      display: block;
-      height: 1px;
-      left: 0;
-      position: absolute;
-      width: 100%;
+    & .card_title {
+      position: relative;
+      &::after {
+        background-color: $yellow;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 1px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.mobile {
+  & .list {
+    margin: 32px auto;
+    overflow: hidden;
+    padding-left: 24px;
+    width: fit-content;
+
+    & .list_item {
+      position: relative;
+      &::before {
+        background-color: $yellow;
+        bottom: 100%;
+        content: "";
+        display: block;
+        height: 1000px;
+        left: -18px;
+        position: absolute;
+        width: 4px;
+      }
+      &::after {
+        background-color: $yellow;
+        border-radius: 100%;
+        content: "";
+        display: block;
+        height: 16px;
+        left: -24px;
+        position: absolute;
+        top: 0px;
+        width: 16px;
+      }
+    }
+  }
+  & .sublist {
+    & .list_item {
+      &::before {
+        background-color: $blue;
+      }
+      &::after {
+        background-color: $blue;
+      }
     }
   }
 }
