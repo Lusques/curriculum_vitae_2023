@@ -1,4 +1,6 @@
+import Contato from "../Contato";
 import Educacional from "../Educacional";
+import Experiencia from "../Experiencia";
 import Home from "../Home";
 import SobreMim from "../SobreMim";
 export default function Main() {
@@ -7,6 +9,8 @@ export default function Main() {
       <Home />
       <SobreMim />
       <Educacional />
+      <Experiencia />
+      <Contato />
     </>
   );
 }

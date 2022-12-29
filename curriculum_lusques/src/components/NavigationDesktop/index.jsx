@@ -5,6 +5,7 @@ export default function NavigationDesktop() {
     "Educacional",
     "Experiência",
     "Portifólio",
+    "Contato",
   ];
 
   return (

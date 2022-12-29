@@ -1,6 +1,37 @@
 import Button from "../Button";
 import style from "./Chart.module.scss";
 
+const information = [
+  {
+    title: "Layouts Responsivos | Out/2021 1",
+    info: "Uso de css e mediaquery para desenvolver layouts responsivos. 1",
+    link: "Link",
+  },
+  {
+    title: "Layouts Responsivos | Out/2021 2",
+    info: "Uso de css e mediaquery para desenvolver layouts responsivos. 2",
+    link: "Link",
+  },
+  {
+    title: "Layouts Responsivos | Out/2021 3",
+    info: "Uso de css e mediaquery para desenvolver layouts responsivos. 3",
+    link: "Link",
+  },
+  {
+    title: "Layouts Responsivos | Out/2021 3",
+    info: "Uso de css e mediaquery para desenvolver layouts responsivos. 3",
+    sublist: [
+      {
+        title: "Sublista - Layouts Responsivos | Out/2021 3",
+        info: "Uso de css e mediaquery para desenvolver layouts responsivos. 3",
+      },
+      {
+        title: "Sublista - Layouts Responsivos | Out/2021 3",
+        info: "Uso de css e mediaquery para desenvolver layouts responsivos. 3",
+      },
+    ],
+  },
+];
 const ListItem = (item) => {
   return (
     <>
@@ -29,42 +60,10 @@ const Sublist = (elements) => {
   );
 };
 
-export default function Chart() {
-  const information = [
-    {
-      title: "Layouts Responsivos | Out/2021 1",
-      info: "Uso de css e mediaquery para desenvolver layouts responsivos. 1",
-      link: "Link",
-    },
-    {
-      title: "Layouts Responsivos | Out/2021 2",
-      info: "Uso de css e mediaquery para desenvolver layouts responsivos. 2",
-      link: "Link",
-    },
-    {
-      title: "Layouts Responsivos | Out/2021 3",
-      info: "Uso de css e mediaquery para desenvolver layouts responsivos. 3",
-      link: "Link",
-    },
-    {
-      title: "Layouts Responsivos | Out/2021 3",
-      info: "Uso de css e mediaquery para desenvolver layouts responsivos. 3",
-      sublist: [
-        {
-          title: "Sublista - Layouts Responsivos | Out/2021 3",
-          info: "Uso de css e mediaquery para desenvolver layouts responsivos. 3",
-        },
-        {
-          title: "Sublista - Layouts Responsivos | Out/2021 3",
-          info: "Uso de css e mediaquery para desenvolver layouts responsivos. 3",
-        },
-      ],
-    },
-  ];
-
+export default function Chart({ array = information }) {
   return (
     <ul className={`list-unstyled text-white ${style.list}`}>
-      {information.map((item, i) => (
+      {array.map((item, i) => (
         <>{ListItem(item)}</>
       ))}
     </ul>
