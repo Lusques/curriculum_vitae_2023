@@ -1,4 +1,5 @@
 import Button from "../../components/Button";
+import Chart from "../../components/Chart";
 import style from "./Educacional.module.scss";
 import alura from "./images/alura.png";
 
@@ -96,53 +97,9 @@ export default function Educacional() {
       );
     };
     return (
-      <div className={`page ${style.mobile}`}>
+      <div className={`page`}>
         <h2 className="page-title display-md headline-res-md">Educacional</h2>
-        <ul className={`list-unstyled text-white ${style.list}`}>
-          {courses.map((item, i) => (
-            <>{ListItem()}</>
-          ))}
-          {/* Exemplo de sublista LIMAO*/}
-          <li className={`mb-3 ${style.list_item}`}>
-            <p className="title-md">Layouts Responsivos | Out/2021</p>
-            <p className="body-sm">
-              Uso de css e mediaquery para desenvolver layouts responsivos.
-            </p>
-            <ul
-              className={`list-unstyled text-white ${style.list} ${style.sublist}`}
-            >
-              <li className={`mb-3 ${style.list_item}`}>
-                <p className="title-md">Layouts Responsivos | Out/2021</p>
-                <p className="body-sm">
-                  Uso de css e mediaquery para desenvolver layouts responsivos.
-                </p>
-                <Button className="body-sm" txtButton="Certificado" outline />
-              </li>
-              <li className={`mb-3 ${style.list_item}`}>
-                <p className="title-md">Layouts Responsivos | Out/2021</p>
-                <p className="body-sm">
-                  Uso de css e mediaquery para desenvolver layouts responsivos.
-                </p>
-                <Button className="body-sm" txtButton="Certificado" outline />
-              </li>
-              <li className={`mb-3 ${style.list_item}`}>
-                <p className="title-md">Layouts Responsivos | Out/2021</p>
-                <p className="body-sm">
-                  Uso de css e mediaquery para desenvolver layouts responsivos.
-                </p>
-                <Button className="body-sm" txtButton="Certificado" outline />
-              </li>
-            </ul>
-          </li>
-          <li className={`mb-3 ${style.list_item}`}>
-            <p className="title-md">Layouts Responsivos | Out/2021</p>
-            <p className="body-sm">
-              Uso de css e mediaquery para desenvolver layouts responsivos.
-            </p>
-            <Button className="body-sm" txtButton="Certificado" outline />
-          </li>
-          {/* Exemplo de sublista */}
-        </ul>
+        <Chart />
       </div>
     );
   };

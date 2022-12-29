@@ -1,0 +1,51 @@
+@import "../../scss/variables";
+$yellow: map-get(
+  $map: $map-yellow-colors,
+  $key: 400,
+);
+$blue: map-get(
+  $map: $map-blue-colors,
+  $key: 400,
+);
+
+.list {
+  margin: 32px auto;
+  overflow: hidden;
+  padding-left: 24px;
+  width: fit-content;
+
+  & .list_item {
+    position: relative;
+    &::before {
+      background-color: $yellow;
+      bottom: 100%;
+      content: "";
+      display: block;
+      height: 1000px;
+      left: -18px;
+      position: absolute;
+      width: 4px;
+    }
+    &::after {
+      background-color: $yellow;
+      border-radius: 100%;
+      content: "";
+      display: block;
+      height: 16px;
+      left: -24px;
+      position: absolute;
+      top: 0px;
+      width: 16px;
+    }
+  }
+}
+.sublist {
+  & .list_item {
+    &::before {
+      background-color: $blue;
+    }
+    &::after {
+      background-color: $blue;
+    }
+  }
+}
