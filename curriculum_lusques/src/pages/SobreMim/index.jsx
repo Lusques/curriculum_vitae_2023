@@ -16,7 +16,7 @@ export default function Home() {
   };
   return (
     <>
-      <div className="page d-flex flex-column flex-lg-row-reverse align-items-center justify-content-between">
+      <div className="page container d-flex flex-column flex-lg-row-reverse align-items-center justify-content-between">
         <aside
           className={`${style.profile_image_container} d-inline-block mb-5`}
         >

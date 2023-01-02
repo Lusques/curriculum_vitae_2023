@@ -1,0 +1,24 @@
+@import "../../scss/variables";
+$yellow: map-get(
+  $map: $map-yellow-colors,
+  $key: 400,
+);
+.card {
+  width: 320px;
+  & figure {
+    background-color: red;
+    height: 230px;
+    width: 100%;
+  }
+  & h5 {
+    &::after {
+      background-color: $yellow;
+      content: "";
+      display: block;
+      height: 1px;
+      position: relative;
+      bottom: -8px;
+      width: 120px;
+    }
+  }
+}

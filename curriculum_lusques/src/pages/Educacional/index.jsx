@@ -3,8 +3,39 @@ import Chart from "../../components/Chart";
 import style from "./Educacional.module.scss";
 import alura from "./images/alura.png";
 
+const courses = [
+  {
+    title: "Layouts Responsivos | Out/2021 1",
+    info: "Uso de css e mediaquery para desenvolver layouts responsivos. 1",
+    link: "Link",
+  },
+  {
+    title: "Layouts Responsivos | Out/2021 2",
+    info: "Uso de css e mediaquery para desenvolver layouts responsivos. 2",
+    link: "Link",
+  },
+  {
+    title: "Layouts Responsivos | Out/2021 3",
+    info: "Uso de css e mediaquery para desenvolver layouts responsivos. 3",
+    link: "Link",
+  },
+  {
+    title: "Layouts Responsivos | Out/2021 3",
+    info: "Uso de css e mediaquery para desenvolver layouts responsivos. 3",
+    sublist: [
+      {
+        title: "Sublista - Layouts Responsivos | Out/2021 3",
+        info: "Uso de css e mediaquery para desenvolver layouts responsivos. 3",
+      },
+      {
+        title: "Sublista - Layouts Responsivos | Out/2021 3",
+        info: "Uso de css e mediaquery para desenvolver layouts responsivos. 3",
+      },
+    ],
+  },
+];
+
 export default function Educacional() {
-  const courses = [0, 1, 2, 3, 4, 5, 6];
   const DesktopCourses = () => {
     const ImgAlura = () => {
       return <img className="mb-2 mx-4" src={alura} alt="Alura" />;
@@ -46,7 +77,7 @@ export default function Educacional() {
     };
     return (
       <>
-        <div className={`page ${style.desktop}`}>
+        <div className={`page container ${style.desktop}`}>
           <h2 className="page-title display-md headline-res-md mb-4">
             Educacional
           </h2>
@@ -60,46 +91,12 @@ export default function Educacional() {
     );
   };
   const MobileCourses = () => {
-    const ListItem = () => {
-      return (
-        <>
-          <li className={`mb-3 ${style.list_item}`}>
-            <p className="title-md">Layouts Responsivos | Out/2021</p>
-            <p className="body-sm">
-              Uso de css e mediaquery para desenvolver layouts responsivos.
-            </p>
-            <Button className="body-sm" txtButton="Certificado" outline />
-          </li>
-        </>
-      );
-    };
-    const Sublist = () => {
-      return (
-        <>
-          <li className={`mb-3 ${style.list_item}`}>
-            <p className="title-md">Layouts Responsivos | Out/2021</p>
-            <p className="body-sm">
-              Uso de css e mediaquery para desenvolver layouts responsivos.
-            </p>
-            <ul className={`list-unstyled text-white ${style.list}`}>
-              {courses.map((item, i) => (
-                <>
-                  <ul className={`list-unstyled text-white ${style.list}`}>
-                    {courses.map((item, i) => (
-                      <>{ListItem()}</>
-                    ))}
-                  </ul>
-                </>
-              ))}
-            </ul>
-          </li>
-        </>
-      );
-    };
     return (
       <div className={`page`}>
         <h2 className="page-title display-md headline-res-md">Educacional</h2>
-        <Chart />
+        <div className="d-flex justify-content-center">
+          <Chart array={courses} />
+        </div>
       </div>
     );
   };

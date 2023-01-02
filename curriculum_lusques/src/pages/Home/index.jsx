@@ -3,7 +3,7 @@ import Button from "../../components/Button";
 export default function Home() {
   return (
     <>
-      <div className="page row align-items-center flex-column-reverse flex-lg-row">
+      <div className="page mx-lg-auto container row align-items-center flex-column-reverse flex-lg-row">
         <div className="text-white col-10 col-lg-6">
           <div className="display-md headline-res-lg text-center text-lg-start mb-4 mb-lg-0">
             <p className="m-0">Olá!</p>

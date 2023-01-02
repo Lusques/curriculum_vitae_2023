@@ -8,7 +8,7 @@ export default function ReactRoutes() {
       <header>
         <Header />
       </header>
-      <main className="container px-5">
+      <main className="px-5 px-lg-0">
         <Routes>
           <Route path="/" element={<Main />} />
         </Routes>

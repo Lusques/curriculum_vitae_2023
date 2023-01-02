@@ -45,7 +45,7 @@ const technologies = [
 
 export default function Experiencia() {
   return (
-    <div className="page">
+    <div className="page container">
       <h2 className="page-title display-md headline-res-md mb-4">
         Experiência
       </h2>
