@@ -1,6 +1,16 @@
-import ilustration from "./images/home_animation.png";
 import Button from "../../components/Button";
+import animationData from "./images/home_animation";
+import Lottie from "react-lottie";
+
 export default function Home() {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   return (
     <>
       <div className="page mx-lg-auto container row align-items-center flex-column-reverse flex-lg-row">
@@ -20,7 +30,9 @@ export default function Home() {
           </div>
         </div>
         <aside className="col-10 col-lg-6">
-          <img className="w-100" src={ilustration} alt="ilustração" />
+          <div className="">
+            <Lottie options={defaultOptions} height={"100%"} width={"100%"} />
+          </div>
         </aside>
       </div>
     </>
