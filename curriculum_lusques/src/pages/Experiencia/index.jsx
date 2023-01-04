@@ -51,7 +51,7 @@ export default function Experiencia() {
       </h2>
       <div className="row justify-content-between text-white">
         <div className="col-lg-6">
-          <div>
+          <div className="px-5 px-lg-0 mx-3 mx-lg-0">
             <h2 className="headline-md">
               <span className="text-yellow-400">{"</>"}</span> Aplicabilidade
             </h2>
@@ -64,7 +64,7 @@ export default function Experiencia() {
               </h2>
               <Chart array={events} />
             </div>
-            <div className="d-lg-none">
+            <div className="d-lg-none px-5 px-lg-0 mx-3 mx-lg-0">
               <h2 className="headline-md">
                 <span className="text-yellow-400">{"</>"}</span> Tecnologias
                 <Chart array={technologies} />
@@ -73,7 +73,7 @@ export default function Experiencia() {
           </div>
         </div>
         <div className="col-lg-4">
-          <div className="d-lg-none">
+          <div className="d-lg-none px-5 px-lg-0 mx-3 mx-lg-0">
             <h2 className="headline-md">
               <span className="text-yellow-400">{"</>"}</span> Eventos
             </h2>

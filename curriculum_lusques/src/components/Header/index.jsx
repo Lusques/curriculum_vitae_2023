@@ -25,15 +25,7 @@ const navElementsLinks = {
   ["Contato"]: "/contato",
 };
 
-export default function Header() {
-  const [currentPage, setCurrentPage] = useState("/"+window.location.href.split("/")[window.location.href.split("/").length - 1]);
-
-  const updateCurrentPage = () => {
-    setTimeout(() => {
-      const url = window.location.href.split("/");
-      setCurrentPage(`/${url[url.length - 1]}`);
-    }, 10);
-  };
+export default function Header({ updateCurrentPage, currentPage }) {
   return (
     <>
       <NavigationDesktop

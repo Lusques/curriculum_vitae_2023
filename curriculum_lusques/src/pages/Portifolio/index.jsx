@@ -46,11 +46,11 @@ export default function Portifolio() {
             {data.pageLink || data.repositorieLink ? (
               <div className="d-flex justify-content-between mt-5">
                 {data.pageLink ? (
-                  <Button className="title-md" txtButton="Página web" />
+                  <Button className="title-md title-res-md" txtButton="Página web" />
                 ) : null}
                 {data.repositorieLink ? (
                   <Button
-                    className="title-md"
+                    className="title-md title-res-md"
                     txtButton="Respositório"
                     outline
                   />

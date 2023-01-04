@@ -13,7 +13,11 @@ const ListItem = (item) => {
   return (
     <>
       <li className={`mb-3 ${style.list_item}`}>
-        {item.title ? <p className="title-md">{item.title}</p> : null}
+        {item.title ? (
+          <p className="title-md">{`${item.title} ${
+            item.conclusionDate ? "| " + item.conclusionDate : ""
+          } `}</p>
+        ) : null}
         {item.info ? <p className="body-sm">{item.info}</p> : null}
         {item.link ? (
           <a href={item.link} target="__blank">

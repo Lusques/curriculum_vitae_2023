@@ -25,6 +25,13 @@ $blue: map-get(
         width: 100%;
       }
     }
+
+    & .credencial {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 75px;
+    }
   }
 }
 

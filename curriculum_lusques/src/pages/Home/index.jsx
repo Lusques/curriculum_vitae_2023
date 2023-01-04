@@ -1,8 +1,10 @@
 import Button from "../../components/Button";
-import animationData from "./images/home_animation";
+import animationData from "../../assets/lottiefile/home_animation";
 import Lottie from "react-lottie";
+import curriculumPDF from "./curriculum.pdf";
+import { Link } from "react-router-dom";
 
-export default function Home() {
+export default function Home({ updateCurrentPage }) {
   const defaultOptions = {
     loop: true,
     reverse: true,
@@ -26,8 +28,13 @@ export default function Home() {
             </p>
           </div>
           <div className="d-flex flex-column flex-lg-row align-items-center gap-3">
-            <Button className="" txtButton="Download CV" />
-            <Button txtButton="Portifólio" outline />
+            <a href={curriculumPDF} target="_blank" download>
+              {/* <a href={curriculumRAR} target="_blank"> */}
+              <Button className="" txtButton="Download CV" />
+            </a>
+            <Link to={"/portifolio"} onClick={updateCurrentPage}>
+              <Button txtButton="Portifólio" outline />
+            </Link>
           </div>
         </div>
         <aside className="col-10 col-lg-6">

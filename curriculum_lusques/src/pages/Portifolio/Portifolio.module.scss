@@ -4,7 +4,8 @@ $yellow: map-get(
   $key: 400,
 );
 .card {
-  width: 320px;
+  max-width: 340px;
+  min-width: 320px;
   & figure {
     background-color: red;
     height: 230px;
