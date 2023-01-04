@@ -1,11 +1,11 @@
-import animationData from "./images/contato_animation.json";
-import email from "./images/email.png";
-import github from "./images/github.png";
-import instagram from "./images/instagram.png";
-import linkedin from "./images/linkedin.png";
+import animationData from "../../assets/lottiefile/contato_animation.json";
+import email from "../../assets/png/email.png";
+import github from "../../assets/png/github.png";
+import instagram from "../../assets/png/instagram.png";
+import linkedin from "../../assets/png/linkedin.png";
 import Lottie from "react-lottie";
 import style from "./Contato.module.scss";
-import whatsapp from "./images/whatsapp.png";
+import whatsapp from "../../assets/png/whatsapp.png";
 export default function Contato() {
   const defaultOptions = {
     loop: true,
@@ -85,7 +85,11 @@ export default function Contato() {
             </div>
           </div>
           <aside className="col-10 col-lg-6">
-            <Lottie options={defaultOptions} height={"100%"} width={window.screen.width > 992 ? "100%" : "80%"} />
+            <Lottie
+              options={defaultOptions}
+              height={"100%"}
+              width={window.screen.width > 992 ? "100%" : "80%"}
+            />
           </aside>
         </div>
       </div>
