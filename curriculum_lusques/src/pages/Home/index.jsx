@@ -5,6 +5,7 @@ import Lottie from "react-lottie";
 export default function Home() {
   const defaultOptions = {
     loop: true,
+    reverse: true,
     autoplay: true,
     animationData: animationData,
     rendererSettings: {
@@ -13,7 +14,7 @@ export default function Home() {
   };
   return (
     <>
-      <div className="page mx-lg-auto container row align-items-center flex-column-reverse flex-lg-row">
+      <div className="page mx-lg-auto container row align-items-center flex-column-reverse flex-lg-row px-5">
         <div className="text-white col-10 col-lg-6">
           <div className="display-md headline-res-lg text-center text-lg-start mb-4 mb-lg-0">
             <p className="m-0">Olá!</p>
@@ -31,7 +32,7 @@ export default function Home() {
         </div>
         <aside className="col-10 col-lg-6">
           <div className="">
-            <Lottie options={defaultOptions} height={"100%"} width={"100%"} />
+            <Lottie options={defaultOptions} height={"100%"} width={"105%"} />
           </div>
         </aside>
       </div>

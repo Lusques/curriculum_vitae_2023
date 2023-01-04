@@ -24,7 +24,6 @@
 
 .nav_item {
   width: fit-content;
-  transition: 0.3s;
   &:not(.active) {
     &:hover {
       & .nav_image {

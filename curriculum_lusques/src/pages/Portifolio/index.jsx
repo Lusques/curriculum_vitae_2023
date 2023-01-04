@@ -65,7 +65,7 @@ export default function Portifolio() {
   const Desktop = () => {
     return (
       <>
-        <div className="page bg-gray-400 d-none d-lg-block">
+        <div className="page bg-gray-400 d-none d-lg-block px-5">
           <div className="container">
             <h2 className="page-title display-md headline-res-md mb-5">
               Portifólio
@@ -121,7 +121,7 @@ export default function Portifolio() {
   const Mobile = () => {
     return (
       <>
-        <div className="page bg-gray-400 d-lg-none">
+        <div className="page bg-gray-400 d-lg-none px-5">
           <div className="container">
             <h2 className="page-title display-md headline-res-md mb-5">
               Portifólio

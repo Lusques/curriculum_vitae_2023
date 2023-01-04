@@ -102,7 +102,7 @@ export default function Educacional() {
   };
   return (
     <>
-      <div className="d-none d-lg-block">
+      <div className="d-none d-lg-block px-5">
         <DesktopCourses />
       </div>
       <div className="d-lg-none">

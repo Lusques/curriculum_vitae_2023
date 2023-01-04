@@ -317,10 +317,6 @@ body {
   cursor: pointer;
 }
 
-.all-container {
-  min-height: 200vh;
-}
-
 .page {
   min-height: 100vh;
   padding: 48px 0;
